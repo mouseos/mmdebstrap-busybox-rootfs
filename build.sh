@@ -20,7 +20,7 @@ sudo chroot ./rootfs /bin/sh -c "echo "busybox-debian" > /etc/hostname"
 sudo cp etc/group rootfs/etc
 sudo cp etc/passwd rootfs/etc
 sudo cp etc/shadow rootfs/etc
-sudo chod 640 rootfs/etc/shadow
+sudo chmod 640 rootfs/etc/shadow
 #passwdパッケージを使う場合のみ
 #sudo cp -r -v etc/pam.d/ rootfs/etc
 
